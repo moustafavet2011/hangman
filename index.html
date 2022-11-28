@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jeu De Pendu </title>
+        <link rel="stylesheet" href="./Css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="game-info">
+                <div class="game-name">Le Jeu de Pendu</div>
+                <div class="category">
+                    Category: <span></span>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="hangman-draw">
+                    <div class="the-draw">
+                        <div class="the-stand"></div>
+                        <div class="the-hang"></div>
+                        <div class="the-rope"></div>
+                        <div class="the-man">
+                            <div class="the-head"></div>
+                            <div class="the-body"></div>
+                            <div class="the-hands"></div>
+                            <div class="the-legs"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letters">
+                    <button type="button" class="hint">INDICE</button>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="letters-guess"></div>
+        </div>
+        <button type="button" class="restart" onclick="window.location.reload()">Recommence</button>
+        <audio id="wrong-answer" src="./Audio/mixkit-arcade-retro-game-over-213.wav"preload="auto"></audio>
+        <audio id="correct-answer" src="./Audio/Ding-sound-effect.mp3"preload="auto"></audio>
+        <audio id="fail" src="./Audio/fail-trombone-02.mp3"preload="auto"></audio>
+        <audio id="winner" src="./Audio/mixkit-small-group-cheer-and-applause-518.wav"preload="auto"></audio>
+        <script type="text/javascript" src="./Js/main.js"></script>
+    </body>
+    </html>
